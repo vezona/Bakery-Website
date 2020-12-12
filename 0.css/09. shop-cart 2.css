@@ -1,0 +1,296 @@
+/* 桌機1920為主 */
+/* * {
+    outline: 1px solid red;
+} */
+
+a {
+    color: white;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+
+body {
+    background-color: #2C2C34;
+    margin: 0;
+    padding: 0;
+}
+
+button:focus {
+    outline: #F3BF0C;
+}
+
+
+/********** mobile-navbar */
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mob-menu {
+    background: #2c2c34e3;
+    border-radius: 30px;
+}
+
+.mob-navbar-icon a:hover {
+    color: #F3BF0C;
+}
+
+/* ********web nav bar********* */
+.logo-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.nav-right a:hover,
+.nav-left a:hover {
+    color: #F3BF0C;
+    /* font-size: 22px; */
+    border-bottom: 3px solid #F3BF0C;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-right,
+.nav-left {
+    margin-top: 30px;
+}
+
+
+/* nav-bar動態滾動消失 */
+.nav-bar-wrap,
+.navbar-mob-wrap {
+    transition: .3s;
+    z-index: 1;
+}
+
+.nav-bar-wrap.hide,
+.navbar-mob-wrap.hide {
+    /* 讓navbar消失  */
+    transform: translateY(-250px)
+}
+
+
+.nav-bar-wrap.nav-bg,
+.navbar-mob-wrap.nav-bg {
+    background: #2c2c34e7;
+}
+
+
+
+
+/* ===================== */
+/* =====   Main   ===== */
+/* ===================== */
+.shop-cart-wrapper {
+    background-color: #F8F8FA;
+    width: 90%;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+.shop-cart {
+    max-width: 1400px;
+}
+
+.progress {
+    background-color: transparent;
+    height: 50px;
+    line-height: 50px;
+}
+
+.progress::before {
+    content: "";
+    background-color: #CCCCCC;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+}
+
+.progress::after {
+    content: "";
+    background-color: #9DAAB2;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 讓圈圈對其中線，但why? */
+    transform: translate(-50%, -50%);
+}
+
+.progress span {
+    z-index: 1;
+    color: white;
+
+}
+
+.progress-middle::before {
+    width: 100%;
+    left: 0;
+
+}
+
+.progress-last::before {
+    left: 0;
+
+}
+
+.active::after {
+    background-color: #2C2C34;
+}
+
+/* 下一步按鈕 */
+.btn-wrap {
+    background-color: #2C2C34;
+    border-radius: 5px;
+
+}
+
+.next-step {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.step-before {
+    background: #ccc;
+}
+
+.step-buttons {
+    bottom: 0;
+}
+
+
+
+
+
+/* *********Footer****** */
+.footer-wrap {
+    height: 60vh;
+
+}
+
+.info {
+    color: #FFAC27;
+}
+
+.follow-us-info i {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.footer-info-wrap hr {
+    border-color: white;
+
+}
+
+
+
+
+/* 所有按鈕樣式 */
+.button-white-wrap {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #81848B;
+    position: relative;
+    margin: 0 auto;
+}
+
+.button-white-wrap button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.button-white-wrap button:hover {
+    border: 2px solid #F3BF0C;
+    color: #F3BF0C;
+    transition: .5s;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+/* MD-768以下會出現的畫面 */
+@media (max-width: 768px) {}
+
+
+/* 分隔斷點 */
+/* 769到1200會出現的畫面 */
+/* 注意，會連帶影響1200 以上的東西*/
+@media (min-width: 769px) {}
+
+/* LG 992 以下會出現的畫面 */
+@media (max-width:992px) {}
+
+/* LG 992 以上會出現的畫面 */
+@media(min-width:992px) {}
+
+
+
+/* XL 1200以下的畫面會出現 */
+@media (max-width: 1200px) {
+    .nav-bar-wrap {
+        display: none !important;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+/* XL-1200以上會出現的畫面 */
+@media (min-width: 1200px) {
+
+
+    .navbar-mob-wrap {
+        display: none;
+    }
+
+
+    /* web版 */
+    .nav-bar-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .nav-bar-wrap a {
+        font-size: 26px;
+    }
+
+    .nav-left .fa-user {
+        margin-right: 20px;
+    }
+
+
+
+
+}

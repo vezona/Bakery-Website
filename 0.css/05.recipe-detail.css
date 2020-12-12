@@ -1,0 +1,588 @@
+/* 桌機1920為主 */
+/* * {
+    outline: 1px solid red;
+} */
+
+a {
+    color: white;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+
+body {
+    background-color: #2C2C34;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 30vh;
+}
+
+button:focus {
+    outline: #F3BF0C;
+}
+
+/********** mobile-navbar */
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mob-menu {
+    background: #2c2c34e3;
+    border-radius: 30px;
+}
+
+.mob-navbar-icon a:hover {
+    color: #F3BF0C;
+}
+
+/* ********web nav bar********* */
+.logo-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.nav-right a:hover,
+.nav-left a:hover {
+    color: #F3BF0C;
+    /* font-size: 22px; */
+    border-bottom: 3px solid #F3BF0C;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-right,
+.nav-left {
+    margin-top: 30px;
+}
+
+
+/* nav-bar動態滾動消失 */
+.nav-bar-wrap,
+.navbar-mob-wrap {
+    transition: .3s;
+    z-index: 1;
+}
+
+.nav-bar-wrap.hide,
+.navbar-mob-wrap.hide {
+    /* 讓navbar消失  */
+    transform: translateY(-250px)
+}
+
+
+.nav-bar-wrap.nav-bg,
+.navbar-mob-wrap.nav-bg {
+    background: #2c2c34e7;
+}
+
+
+
+
+/* ===================== */
+/* =====   Main   ===== */
+/* ===================== */
+
+/* 食譜區塊 */
+
+.recipe-wrap {
+    max-width: 1400px;
+}
+
+.img-row {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* 食譜照片 */
+/* 第一張大圖的呈現 */
+.img-demo {
+    height: 400px;
+}
+
+.recipe-picture {
+    border: 3px solid white;
+    padding: 30px;
+}
+
+.img-demo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 下面小圖橫列的呈現 */
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 本次使用麵包 */
+.pic {
+    height: 200px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.used-bread {
+    border: 2px dashed white;
+}
+
+/* 下方頁籤資訊 */
+/* Web 網頁版頁籤 */
+aside,
+.web-steps {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.up-title-tab {
+    background-color: #F3BF0C;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    line-height: 100px;
+}
+
+
+ul,
+ol {
+    font-size: 32px;
+}
+
+
+
+/* 手機版頁籤開始 */
+.QA-section {
+    top: 12%;
+}
+
+.tabs {
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+/*上方頁籤標題*/
+.tab_item {
+    width: calc(100%/2);
+    height: 50px;
+    border-bottom: 3px solid #F3BF0C;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    text-align: center;
+    color: #565656;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.tab1 {
+    border-radius: 20px 0 0 0;
+}
+
+.tab2 {
+    border-radius: 0 20px 0 0;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*下方內容列表*/
+.tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.all_content a {
+    color: #2C2C34
+}
+
+.QA-answer {
+    display: none;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked~#all_content,
+#programming:checked~#programming_content,
+#design:checked~#design_content {
+    display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked+.tab_item {
+    background-color: #F3BF0C;
+    color: #fff;
+}
+
+
+
+
+
+/* 麵包屑～～～ */
+
+/*  開始*/
+ul {
+    list-style: none;
+}
+
+.breadcrumb-holder {
+    font-size: 1.5rem;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+}
+
+.breadcrumb-holder ul {
+    display: flex;
+}
+
+.breadcrumb-holder li a,
+.breadcrumb-holder li a:link,
+.breadcrumb-holder li a:visited {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/* Rounded breadcrumb styles */
+
+.rounded-breadcrumbs li {
+    margin: 0 8px 0 0;
+}
+
+.rounded-breadcrumbs li a,
+.rounded-breadcrumbs li a:link,
+.rounded-breadcrumbs li a:visited {
+    padding: 5px 15px;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #666;
+    border-radius: 6px/15px;
+    position: relative;
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, .3), inset 0 1px 0 0 #F3BF0C;
+}
+
+.rounded-breadcrumbs li a:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.rounded-breadcrumbs li a:before {
+    content: "";
+    color: #666;
+    width: 10px;
+    height: 10px;
+    background: #F3BF0C;
+    border-radius: 50%;
+    right: -7px;
+    border: 2px solid white;
+    text-shadow: none;
+}
+
+.rounded-breadcrumbs li a:hover,
+.rounded-breadcrumbs li:last-of-type a {
+    background: #F3BF0C;
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, .4), inset 0 1px 0 0 #218897;
+}
+
+.rounded-breadcrumbs li a:hover:before,
+.rounded-breadcrumbs li:last-of-type a:before {
+    background: #666;
+}
+
+
+/* Underlined breadcrumb styles */
+
+
+.underlined-breadcrumbs li a,
+.underlined-breadcrumbs li a:link,
+.underlined-breadcrumbs li a:visited {
+    padding: 7px 25px;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #cecece;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.underlined-breadcrumbs li a:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #cecece;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -5px)
+}
+
+/* 線根 點點變黃 */
+.underlined-breadcrumbs li a::before :hover {
+    background: #F3BF0C;
+    border: 2px solid #F3BF0C;
+}
+
+
+/* 框框內文字 */
+.underlined-breadcrumbs .crumb-1,
+.underlined-breadcrumbs li a:hover,
+.underlined-breadcrumbs li:visited a {
+    /* border: 2px solid #2C2C34; */
+    background: #2C2C34;
+    color: #F3BF0C;
+}
+
+.underlined-breadcrumbs .crumb-1,
+.underlined-breadcrumbs li a:hover:before,
+.underlined-breadcrumbs li:visited a:before {
+
+    /* border: 2px solid #F3BF0C; */
+    background: #F3BF0C;
+}
+
+
+.check-all-wrap {
+    font-size: 40px;
+}
+
+
+
+/* 頁碼 */
+.page-link {
+    color: white;
+    background-color: #2C2C34;
+    border: none;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #F3BF0C;
+    text-decoration: none;
+    background-color: #2C2C34;
+    border-color: none;
+}
+
+
+
+
+
+/* *********Footer****** */
+.footer-wrap {
+    height: 60vh;
+
+}
+
+.info {
+    color: #FFAC27;
+}
+
+.follow-us-info i {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.footer-info-wrap hr {
+    border-color: white;
+
+}
+
+
+
+
+
+
+
+/* ====== 右下角fixed button ====*/
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 10%;
+    right: 8%;
+    z-index: 50;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+/* 所有按鈕樣式 */
+.button-white-wrap {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #81848B;
+    position: relative;
+    margin: 0 auto;
+}
+
+.button-white-wrap button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.button-white-wrap button:hover {
+    border: 2px solid #F3BF0C;
+    color: #F3BF0C;
+    transition: .5s;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+/* MD-768以下會出現的畫面 */
+@media (max-width: 768px) {
+
+    /* Bread Crumb */
+    .bread-crumb {
+        top: 40%;
+        left: 5%;
+    }
+
+    .underlined-breadcrumbs {
+        font-size: 16px;
+    }
+
+    .recipe-video {
+        padding: 30px 20px 0 20px;
+    }
+
+    .web-tabs {
+        display: none;
+    }
+
+    .used-bread-title {
+        text-align: center;
+    }
+}
+
+
+/* 分隔斷點 */
+/* 769到1200會出現的畫面 */
+/* 注意，會連帶影響1200 以上的東西*/
+@media (min-width: 769px) {
+
+    /* Bread Crumb */
+    .bread-crumb {
+        top: 50%;
+        left: 10%;
+    }
+
+    .used-bread {
+        display: flex;
+    }
+
+    /* mob版的頁籤消失 */
+    .tabs {
+        display: none;
+    }
+
+}
+
+/* LG 992 以下會出現的畫面 */
+@media (max-width:992px) {}
+
+/* LG 992 以上會出現的畫面 */
+@media(min-width:992px) {}
+
+
+
+/* XL 1200以下的畫面會出現 */
+@media (max-width: 1200px) {
+    .nav-bar-wrap {
+        display: none !important;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+/* XL-1200以上會出現的畫面 */
+@media (min-width: 1200px) {
+
+
+    .navbar-mob-wrap {
+        display: none;
+    }
+
+
+    /* web版 */
+    .nav-bar-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .nav-bar-wrap a {
+        font-size: 26px;
+    }
+
+    .nav-left .fa-user {
+        margin-right: 20px;
+    }
+
+    /* Bread Crumb */
+    .bread-crumb {
+        top: 60%;
+        left: 10%;
+    }
+
+
+}

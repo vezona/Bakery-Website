@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreatWheat</title>
+
+    <!-- 小圖示 -->
+    <link rel="shortcut icon" href="./picture/logo.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./0.css/02. PL-css.css">
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./picture/fontawesome-free-5.14.0-web/css/all.css">
+
+
+</head>
+
+<body>
+
+
+    <header class="position-relative">
+        <div class="wrap w-100">
+
+
+            <!-- mob-navbar -->
+            <nav
+                class="navbar navbar-mob-wrap navbar-expand-xl navbar-light  w-100 justify-content-between position-fixed position-relative">
+
+
+                <!-- 漢堡 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+
+                <!-- mob logo -->
+                <a class="navbar-brand col-4" href="./01. index.html">
+                    <img src="./picture/logo1.svg" width="30" height="30" alt="">
+                </a>
+
+                <!-- mob-icons -->
+                <li class="mob-navbar-icon list-unstyled ">
+                    <a href="#"><i class="fas fa-user mr-3"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart mr-3"></i></a>
+                </li>
+
+                <!-- mob購物車小視窗 -->
+                <div class="shop-box-wrap position-absolute position-relative py-2 col-lg-3 col-md-10 col-sm-10 col-10">
+
+                    <div class="row shop-box-item m-0 py-2 justify-content-between align-items-center">
+                        <a href="./03.Product-detail.html">
+                            <div class="shop-box-pic-wrap">
+                                <img src="./picture/2. breads/6. bread square.png" alt="">
+                            </div>
+                        </a>
+
+                        <div class="title text-dark">法國手揉捲</div>
+                        <div class="number text-dark">2條</div>
+                        <button class="delete">刪除</button>
+
+                    </div>
+
+                    <!-- 前往結帳按鈕 -->
+                    <a href="./08. shop-cart1.html">
+                        <div class="btn-wrap position-absolute">
+                            <button class="w-100 go-pay">前往結帳</button>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- nav菜單 -->
+                <div class=" mob-menu collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item mt-3">
+                            <a class="nav-link text-white" href="./01. index.html">首頁 <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./01.1 about us.html">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./01.2 ingredient.html">使用材料</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./02.Product-list.html">本店商品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./04.recipe-list.html">搭配食譜</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./06. Q&A.html">Ｑ＆Ａ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./07. Maps.html">門市據點</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </nav>
+
+
+            <!-- web nav-bar -->
+            <div
+                class="nav-bar-wrap d-flex col-12  mx-auto justify-content-center align-items-center position-fixed position-relative">
+
+                <!-- 左邊的連結 -->
+                <ul class="nav-right d-flex col-4 list-unstyled justify-content-between align-items-center">
+                    <li><a href="./01. index.html">首頁</a></li>
+                    <li><a href="./01.1 about us.html">關於我們</a></li>
+                    <li><a href="./01.2 ingredient.html">使用材料</a></li>
+                    <li class="now-page"><a href="./02.Product-list.html">本店商品</a></li>
+                </ul>
+                <!-- logo -->
+                <div class="logo-wrap col-3">
+                    <a href="./01. index.html" class="logo">
+                        <img src="./picture/logo1.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- 右邊的連結 -->
+                <ul class="nav-left d-flex col-4 list-unstyled justify-content-between align-items-center">
+                    <li><a href="./04.recipe-list.html">搭配食譜</a></li>
+                    <li><a href="./06. Q&A.html">Ｑ＆Ａ</a></li>
+                    <li><a href="./07. Maps.html">門市據點</a></li>
+                    <li class="web-navbar-icon">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+
+                <!-- mob購物車小視窗 -->
+                <div class="shop-box-wrap position-absolute position-relative py-2 col-lg-3 col-md-10 col-sm-10 col-10">
+
+                    <div class="row shop-box-item m-0 py-2 justify-content-between align-items-center">
+                        <a href="./03.Product-detail.html">
+                            <div class="shop-box-pic-wrap">
+                                <img src="./picture/2. breads/6. bread square.png" alt="">
+                            </div>
+                        </a>
+
+                        <div class="title text-dark">法國手揉捲</div>
+                        <div class="number text-dark">2條</div>
+                        <button class="delete">刪除</button>
+
+                    </div>
+
+                    <!-- 前往結帳按鈕 -->
+                    <a href="./08. shop-cart1.html">
+                        <div class="btn-wrap position-absolute">
+                            <button class="w-100 go-pay">前往結帳</button>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 麵包屑 Bread Crumb -->
+                <div class="center bread-crumb position-absolute">
+
+
+                    <!--    1 元點點-->
+                    <div class="breadcrumb-holder">
+                        <ul class="underlined-breadcrumbs">
+                            <li><a href="./01. index.html">首頁</a></li>
+                            <li><a href="./02.Product-list.html" class="crumb-1">商品列表</a></li>
+                            <!-- <li><a href="#">Portable</a></li>
+                    <li><a href="#">Sony</a></li> -->
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <main>
+
+        <!-- ===== Section 4 麵包列表  -->
+        <div class="row section4 section-outter-wrap mb-5 col-12 m-0 p-0 position-relative">
+
+            <!-- 主體麵包區 -->
+
+            <div class="section4-info-wrap mx-auto">
+                <div class="section-inner-wrap w-50  pb-5 m-auto text-center">
+                    <h1 class="maintitle mb-5 text-white">
+                        精選麵包
+                    </h1>
+                </div>
+
+                <!-- 麵包外包邊匡 -->
+                <div class="bread-wrap m-auto">
+                    <!-- 麵包橫列小卡 -->
+                    <div class="row d-flex w-100 mx-auto">
+                        <!-- 麵包小卡一 -->
+                        <div class="card-wrap h-100 p-0 mb-5 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <a href="./03.Product-detail.html">
+                                <div
+                                    class="card-img-wrap d-flex justify-content-center bread-box m-auto active col-lg-12 col-md-8 col-sm-8 col-8">
+                                    <img src="./picture/2. breads/1. bagel.png" alt="">
+                                </div>
+                            </a>
+
+                            <div class="card-info-wrap my-auto p-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 class="card-title text-center mt-4">法國黑麥長卷麵包</h3>
+                                <div class="card-info bread text-center my-3">
+                                    在於彼此廣泛一片太陽有限責任過
+                                    <br />
+                                    <br />
+                                    $ 300 元
+                                </div>
+                                <hr class="text-color">
+                                <div class="bread-icon-wrap d-flex justify-content-around">
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-egg"></i>
+                                        <p>放牧雞蛋</p>
+                                    </div>
+
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-weight"></i>
+                                        <p>500g/個</p>
+                                    </div>
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>蛋奶素</p>
+                                    </div>
+                                </div>
+                                <div class="button-white-wrap">
+                                    <button>立刻購買</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 麵包小卡二 -->
+                        <div class="card-wrap h-100 p-0 mb-5 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <a href="./03.Product-detail.html">
+                                <div
+                                    class="card-img-wrap d-flex justify-content-center bread-box m-auto active col-lg-12 col-md-8 col-sm-8 col-8">
+                                    <img src="./picture/2. breads/2. round wheat.png" alt="">
+                                </div>
+                            </a>
+                            <div class="card-info-wrap my-auto p-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 class="card-title text-center mt-4">法國黑麥長卷麵包</h3>
+                                <div class="card-info bread text-center my-3">
+                                    在於彼此廣泛一片太陽有限責任過
+                                    <br />
+                                    <br />
+                                    $ 300 元
+                                </div>
+                                <hr class="text-color">
+                                <div class="bread-icon-wrap d-flex justify-content-around">
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-egg"></i>
+                                        <p>放牧雞蛋</p>
+                                    </div>
+
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-weight"></i>
+                                        <p>500g/個</p>
+                                    </div>
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>蛋奶素</p>
+                                    </div>
+                                </div>
+                                <div class="button-white-wrap">
+                                    <button>立刻購買</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 麵包小卡三 -->
+                        <div class="card-wrap h-100 p-0 mb-5 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <a href="./03.Product-detail.html">
+                                <div
+                                    class="card-img-wrap d-flex justify-content-center bread-box m-auto col-lg-12 col-md-8 col-sm- col-8">
+                                    <img src="./picture/2. breads/3. small breads.png" alt="">
+                                </div>
+                            </a>
+                            <div class="card-info-wrap my-auto p-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 class="card-title text-center mt-4">法國黑麥長卷麵包</h3>
+                                <div class="card-info bread text-center my-3">
+                                    在於彼此廣泛一片太陽有限責任過
+                                    <br />
+                                    <br />
+                                    $ 300 元
+                                </div>
+                                <hr class="text-color">
+                                <div class="bread-icon-wrap d-flex justify-content-around">
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-egg"></i>
+                                        <p>放牧雞蛋</p>
+                                    </div>
+
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-weight"></i>
+                                        <p>500g/個</p>
+                                    </div>
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>蛋奶素</p>
+                                    </div>
+                                </div>
+                                <div class="button-white-wrap">
+                                    <button>立刻購買</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 麵包橫列小卡二 -->
+                    <div class="row d-flex w-100 mx-auto">
+                        <!-- 麵包小卡一 -->
+                        <div class="card-wrap h-100 p-0 mb-5 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <a href="./03.Product-detail.html">
+                                <div
+                                    class="card-img-wrap d-flex justify-content-center bread-box m-auto active col-lg-12 col-md-8 col-sm-8 col-8">
+                                    <img src="./picture/2. breads/4. round-bread.png" alt="">
+                                </div>
+                            </a>
+                            <div class="card-info-wrap my-auto p-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 class="card-title text-center mt-4">法國黑麥長卷麵包</h3>
+                                <div class="card-info bread text-center my-3">
+                                    在於彼此廣泛一片太陽有限責任過
+                                    <br />
+                                    <br />
+                                    $ 300 元
+                                </div>
+                                <hr class="text-color">
+                                <div class="bread-icon-wrap d-flex justify-content-around">
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-egg"></i>
+                                        <p>放牧雞蛋</p>
+                                    </div>
+
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-weight"></i>
+                                        <p>500g/個</p>
+                                    </div>
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>蛋奶素</p>
+                                    </div>
+                                </div>
+                                <div class="button-white-wrap">
+                                    <button>立刻購買</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 麵包小卡二 -->
+                        <div class="card-wrap h-100 p-0 mb-5 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <a href="./03.Product-detail.html">
+                                <div
+                                    class="card-img-wrap d-flex justify-content-center bread-box m-auto active col-lg-12 col-md-8 col-sm-8 col-8">
+                                    <img src="./picture/2. breads/5. round-bread2.png" alt="">
+                                </div>
+                            </a>
+                            <div class="card-info-wrap my-auto p-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 class="card-title text-center mt-4">法國黑麥長卷麵包</h3>
+                                <div class="card-info bread text-center my-3">
+                                    在於彼此廣泛一片太陽有限責任過
+                                    <br />
+                                    <br />
+                                    $ 300 元
+                                </div>
+                                <hr class="text-color">
+                                <div class="bread-icon-wrap d-flex justify-content-around">
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-egg"></i>
+                                        <p>放牧雞蛋</p>
+                                    </div>
+
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-weight"></i>
+                                        <p>500g/個</p>
+                                    </div>
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>蛋奶素</p>
+                                    </div>
+                                </div>
+                                <div class="button-white-wrap">
+                                    <button>立刻購買</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 麵包小卡三 -->
+                        <div class="card-wrap h-100 p-0 mb-5 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <a href="./03.Product-detail.html">
+                                <div
+                                    class="card-img-wrap d-flex justify-content-center bread-box m-auto active col-lg-12 col-md-8 col-sm-8 col-8">
+                                    <img src="./picture/2. breads/6. bread square.png" alt="">
+                                </div>
+                            </a>
+                            <div class="card-info-wrap my-auto p-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 class="card-title text-center mt-4">法國黑麥長卷麵包</h3>
+                                <div class="card-info bread text-center my-3">
+                                    在於彼此廣泛一片太陽有限責任過
+                                    <br />
+                                    <br />
+                                    $ 300 元
+                                </div>
+                                <hr class="text-color">
+                                <div class="bread-icon-wrap d-flex justify-content-around">
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-egg"></i>
+                                        <p>放牧雞蛋</p>
+                                    </div>
+
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-weight"></i>
+                                        <p>500g/個</p>
+                                    </div>
+                                    <div class="first-icon text-center">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>蛋奶素</p>
+                                    </div>
+                                </div>
+                                <div class="button-white-wrap">
+                                    <button>立刻購買</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 購物車畫面 -->
+        <div id="cartWrap" class="shopping-cart-wrap position-fixed">
+
+            <div class="shop-cart-content position-fixed position-relative">
+
+                <button class="btn-close position-absolute">
+                    <i class="fas fa-times text-white"></i>
+                </button>
+
+                <div class="content-wrap col-12 h-100 pt-2">
+                    <div class="right-pic col-lg-6 col-md-6 col-sm-6 col-12">
+                        <img src="./picture/2. breads/3. small breads.png" alt="">
+
+                    </div>
+
+                    <!-- 左邊資訊區 -->
+                    <div class="left-info d-flex flex-column justify-content-around col-lg-6 col-md-6 col-sm-6 col-12">
+
+                        <div class="info-out text-center">
+                            <h2 class="product-name">法國黑麥長卷麵包</h2>
+                            <div class="card-info bread text-center my-3 text-dark">
+                                四周位元同一一切都是因為代理把你花蓮，農業代理蓮
+                            </div>
+                        </div>
+
+                        <div class="cost text-center">
+                            200
+                        </div>
+
+                        <!-- 數量加減區塊 -->
+                        <div class="number-wrap">
+                            <div class="">數量</div>
+                            <div class="input-wrap">
+                                <div class="input-group  justify-content-between">
+                                    <span class="minus"><button><i class="fas fa-minus"></i></button></span>
+
+                                    <input type="text" id='product-quantity' class="col-9" value="1">
+
+                                    <span class="add"><button><i class="fas fa-plus"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 總金額區塊 -->
+
+                        <div class="total-wrap mt-2">
+                            <div class="total">總金額</div>
+                            <div class="input-group ml-3">
+                                <span class="mr-3"><i class="fas fa-dollar-sign"></i></span>
+                                <input type="text" id="total-cost">
+                            </div>
+                        </div>
+
+                        <!-- 立刻購買按鈕 -->
+                        <div class="btn-wrap mt-2">
+                            <button class="w-100">立刻購買</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        </div>
+
+
+        <!-- 頁碼 -->
+        <div class="container-fluid mb-5">
+            <div class="row col-12 justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+        <!--======== 右下角回到首頁按鈕 ========-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="row footer section-outter-wrap col-12 m-0 p-0">
+            <div class="footer-wrap d-flex w-100 position-relative">
+
+                <div class="footer-info-wrap col-12 m-auto text-center">
+                    <div class="contact-us text-white">Contact us</div>
+                    <div class="info">
+                        營業時間：週一至週日 AM10-PM10
+                        <br />
+                        電話：02-2742-1289
+                        <br />
+                        地址：台北市大安區信義路一段153號
+                        <br />
+                        客服信箱：runner@gmail.com
+                    </div>
+
+                    <div class="follow-us text-white mt-5">Follow us on</div>
+
+                    <div class="follow-us-info d-flex flex-column justify-content-center">
+
+                        <p class="info m-0"><i class="fab fa-facebook-f text-white"></i> Facebook</p>
+
+
+                        <p class="info m-0"> <i class="fab fa-twitter text-white"></i> Twitter </p>
+
+
+                        <p class="info m-0"> <i class="fab fa-instagram text-white"></i> Instagram</p>
+                    </div>
+                    <hr class="col-2">
+                    <p class="text-white">Copyright &copy since 2020</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap JQ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <!-- 引用我自己的ＪＱ連結 -->
+    <script src="./JS/2. PL-JQ.js"></script>
+
+    <!-- My own JQ -->
+    <script>
+
+
+    </script>
+</body>
+
+</html>

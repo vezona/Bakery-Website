@@ -1,0 +1,413 @@
+/* 桌機1920為主 */
+/* * {
+    outline: 1px solid red;
+} */
+
+a {
+    color: white;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+
+body {
+    background-color: #2C2C34;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 30vh;
+}
+
+button:focus {
+    outline: #F3BF0C;
+}
+
+
+/********** mobile-navbar */
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mob-menu {
+    background: #2c2c34e3;
+    border-radius: 30px;
+}
+
+.mob-navbar-icon a:hover {
+    color: #F3BF0C;
+}
+
+/* ********web nav bar********* */
+.logo-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.nav-right a:hover,
+.nav-left a:hover {
+    color: #F3BF0C;
+    /* font-size: 22px; */
+    border-bottom: 3px solid #F3BF0C;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-right,
+.nav-left {
+    margin-top: 30px;
+}
+
+
+/* nav-bar動態滾動消失 */
+.nav-bar-wrap,
+.navbar-mob-wrap {
+    transition: .3s;
+    z-index: 1;
+}
+
+.nav-bar-wrap.hide,
+.navbar-mob-wrap.hide {
+    /* 讓navbar消失  */
+    transform: translateY(-250px)
+}
+
+
+.nav-bar-wrap.nav-bg,
+.navbar-mob-wrap.nav-bg {
+    background: #2c2c34e7;
+}
+
+
+
+
+/* ===================== */
+/* =====   Main   ===== */
+/* ===================== */
+/* main {
+    height: 500vh;
+} */
+
+/* 麵包屑～～～ */
+
+/*  開始*/
+ul {
+    list-style: none;
+}
+
+.breadcrumb-holder {
+    font-size: 1.5rem;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+}
+
+.breadcrumb-holder ul {
+    display: flex;
+}
+
+.breadcrumb-holder li a,
+.breadcrumb-holder li a:link,
+.breadcrumb-holder li a:visited {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/* Rounded breadcrumb styles */
+
+.rounded-breadcrumbs li {
+    margin: 0 8px 0 0;
+}
+
+.rounded-breadcrumbs li a,
+.rounded-breadcrumbs li a:link,
+.rounded-breadcrumbs li a:visited {
+    padding: 5px 15px;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #666;
+    border-radius: 6px/15px;
+    position: relative;
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, .3), inset 0 1px 0 0 #F3BF0C;
+}
+
+.rounded-breadcrumbs li a:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.rounded-breadcrumbs li a:before {
+    content: "";
+    color: #666;
+    width: 10px;
+    height: 10px;
+    background: #F3BF0C;
+    border-radius: 50%;
+    right: -7px;
+    border: 2px solid white;
+    text-shadow: none;
+}
+
+.rounded-breadcrumbs li a:hover,
+.rounded-breadcrumbs li:last-of-type a {
+    background: #F3BF0C;
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, .4), inset 0 1px 0 0 #218897;
+}
+
+.rounded-breadcrumbs li a:hover:before,
+.rounded-breadcrumbs li:last-of-type a:before {
+    background: #666;
+}
+
+
+/* Underlined breadcrumb styles */
+
+
+.underlined-breadcrumbs li a,
+.underlined-breadcrumbs li a:link,
+.underlined-breadcrumbs li a:visited {
+    padding: 7px 25px;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #cecece;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.underlined-breadcrumbs li a:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #cecece;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -5px)
+}
+
+/* 線根 點點變黃 */
+.underlined-breadcrumbs li a::before :hover {
+    background: #F3BF0C;
+    border: 2px solid #F3BF0C;
+}
+
+
+/* 框框內文字 */
+.underlined-breadcrumbs .crumb-1,
+.underlined-breadcrumbs li a:hover,
+.underlined-breadcrumbs li:visited a {
+    /* border: 2px solid #2C2C34; */
+    background: #2C2C34;
+    color: #F3BF0C;
+}
+
+.underlined-breadcrumbs .crumb-1,
+.underlined-breadcrumbs li a:hover:before,
+.underlined-breadcrumbs li:visited a:before {
+
+    /* border: 2px solid #F3BF0C; */
+    background: #F3BF0C;
+}
+
+
+
+
+/* 頁碼 */
+.page-link {
+    color: white;
+    background-color: #2C2C34;
+    border: none;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #F3BF0C;
+    text-decoration: none;
+    background-color: #2C2C34;
+    border-color: none;
+}
+
+
+
+
+
+/* *********Footer****** */
+.footer-wrap {
+    height: 60vh;
+
+}
+
+.info {
+    color: #FFAC27;
+}
+
+.follow-us-info i {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.footer-info-wrap hr {
+    border-color: white;
+
+}
+
+
+
+
+
+
+
+/* ====== 右下角fixed button ====*/
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 10%;
+    right: 8%;
+    z-index: 50;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+/* 所有按鈕樣式 */
+.button-white-wrap {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #81848B;
+    position: relative;
+    margin: 0 auto;
+}
+
+.button-white-wrap button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.button-white-wrap button:hover {
+    border: 2px solid #F3BF0C;
+    color: #F3BF0C;
+    transition: .5s;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+/* MD-768以下會出現的畫面 */
+@media (max-width: 768px) {
+
+    /* Bread Crumb */
+    .bread-crumb {
+        top: 40%;
+        left: 5%;
+    }
+}
+
+
+/* 分隔斷點 */
+/* 769到1200會出現的畫面 */
+/* 注意，會連帶影響1200 以上的東西*/
+@media (min-width: 769px) {
+
+    /* Bread Crumb */
+    .bread-crumb {
+        top: 50%;
+        left: 10%;
+    }
+
+
+}
+
+/* LG 992 以下會出現的畫面 */
+@media (max-width:992px) {}
+
+/* LG 992 以上會出現的畫面 */
+@media(min-width:992px) {}
+
+
+
+/* XL 1200以下的畫面會出現 */
+@media (max-width: 1200px) {
+    .nav-bar-wrap {
+        display: none !important;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+/* XL-1200以上會出現的畫面 */
+@media (min-width: 1200px) {
+
+
+    .navbar-mob-wrap {
+        display: none;
+    }
+
+
+    /* web版 */
+    .nav-bar-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .nav-bar-wrap a {
+        font-size: 26px;
+    }
+
+    .nav-left .fa-user {
+        margin-right: 20px;
+    }
+
+    /* Bread Crumb */
+    .bread-crumb {
+        top: 60%;
+        left: 10%;
+    }
+
+
+}

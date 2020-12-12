@@ -1,0 +1,969 @@
+/* 桌機1920為主 */
+/* * {
+    outline: 1px solid red;
+} */
+
+a {
+    color: white;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+button:focus {
+    outline: #F3BF0C;
+}
+
+main {
+    overflow: hidden;
+}
+
+.now-page a {
+    color: #F3BF0C;
+}
+
+.section1 {
+    color: white;
+    /* background: url(./2.\ crasson\ and\ flour.jpg); */
+
+    line-height: .5;
+}
+
+/* mobile-navbar */
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mob-navbar-icon a:hover {
+    color: #F3BF0C;
+}
+
+
+/* ====web nav bar===== */
+.logo-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.nav-right a:hover,
+.nav-left a:hover {
+    color: #F3BF0C;
+    /* font-size: 22px; */
+    border-bottom: 3px solid #F3BF0C;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-right,
+.nav-left {
+    margin-top: 30px;
+}
+
+/* nav-bar-web 動畫一開始消失，結束時才出現 */
+
+.nav-bar-wrap,
+.navbar-mob-wrap,
+.info-anm {
+    opacity: 0;
+    animation: nav-web-delay 1s ease-in;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-web-delay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* nav-bar動態滾動消失 */
+.nav-bar-wrap,
+.navbar-mob-wrap {
+    transition: .3s;
+    z-index: 1;
+}
+
+.nav-bar-wrap.hide,
+.navbar-mob-wrap.hide {
+    /* 讓navbar消失  */
+    transform: translateY(-250px)
+}
+
+.nav-bar-wrap.nav-bg,
+.navbar-mob-wrap.nav-bg {
+    background: #2c2c34e7;
+    z-index: 1;
+}
+
+
+/* nav-info */
+.info-wrap {
+    height: 60%;
+
+    top: 25%;
+}
+
+
+.bitTitle {
+    opacity: 0;
+    animation: slogan 2s ease-in;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slogan {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.bitTitle {
+    margin-top: 10%;
+    color: #F3BF0C;
+}
+
+/* ～～～～～Section 2 Start～～～～～～ */
+.section2 {
+    height: 800px;
+}
+
+.section-inner-wrap {
+    color: #2C2C34;
+}
+
+.section-info {
+    line-height: 2;
+}
+
+.section2 .section-info {
+    height: 300px;
+}
+
+.s2-info-wrap {
+    background: url(../picture/back-img/bg-black.jpg);
+    /* background-attachment: fixed; */
+    color: white;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+/* Section 2 動態浮現 */
+.section2 {
+    transition: .8s ease-out;
+}
+
+
+.section2.moveup {
+    transform: translateY(-120px);
+}
+
+
+/* ～～～～～～Section3 開始～～～～ */
+
+
+.card-img-wrap {
+    height: 50%;
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Section 3 動態浮現 */
+.section3 {
+    transition: .8s ease-out;
+}
+
+
+.section3.moveup {
+    transform: translateY(-120px);
+}
+
+.dr5.shake {
+    transform: scale(2) rotate(20deg);
+}
+
+
+
+
+/* ～～～～～～Section4 開始～～～～ */
+.section4 {
+    margin-top: 300px;
+    /* background-color: #2C2C34; */
+    background: url(../picture/back-img/bg-black.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+
+/* Section 3 裝飾物 */
+
+
+.check-all-wrap :hover,
+.arrow-right :hover {
+    color: #F3BF0C;
+    /* font-size: 22px; */
+    text-decoration: none;
+    transition: .3s;
+}
+
+.arrow-right {
+    fill: white;
+}
+
+
+
+/* 上邊匡 */
+.border-t {
+    height: 150px;
+    top: -5px;
+}
+
+.border-t img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 下邊匡 */
+.border-bottom {
+    height: 230px;
+    bottom: 0px;
+}
+
+.border-bottom img {
+    width: 100%;
+    height: 102%;
+    object-fit: cover;
+}
+
+/* 中間主體位置 */
+.section4-info-wrap {
+    margin-top: 230px;
+    margin-bottom: 230px;
+}
+
+/* 麵包區塊 */
+.bread-wrap {
+    max-width: 1320px;
+}
+
+/* 麵包小卡 */
+.bread-wrap hr {
+    border-color: white;
+}
+
+.bread-box {
+    height: 400px;
+}
+
+.card-info.bread {
+    color: #F3BF0C;
+}
+
+/* ～～～～～～Section5 食譜開始～～～～ */
+.bigger-wrap {
+    max-width: 1400px;
+    overflow: hidden;
+
+}
+
+.arrow-wrap {
+    top: 45%;
+    z-index: 1;
+}
+
+.arrow-right.black {
+    color: #2C2C34;
+    font-size: 30px;
+}
+
+.arrow-right.gray {
+    color: #81848B;
+    font-size: 30px;
+}
+
+
+
+.recipe-outter-wrap {
+    width: 4000px;
+    left: 0;
+    transition: .8s;
+}
+
+
+.recipe-wrap {
+    width: 100%;
+    margin: 20px auto;
+    /* overflow: hidden; */
+}
+
+
+
+
+/* 把圖片縮到符合大小 */
+.recipe-card-img-wrap {
+    height: 100%;
+}
+
+.recipe-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 這邊就要把外層的寬度拉大，才能讓每一張食譜都是1056，而不會收縮  */
+.recipe-img-wrap {
+    height: 800px;
+    /* width: 5280px; */
+    /* 這裡如果移動，外框wrap不移動，裡面的照片移動，就會有視差看起來像在輪播一樣 */
+    /* 這邊設定transition可以讓圖片慢一點出現，造成滑動出現的效果 */
+    left: 0;
+    /* 讓第一個跳轉時也變成滑動*/
+    transition: 0.6s;
+}
+
+
+/* 食譜時間卡 */
+.recipe-card-wrap {
+    background-color: #d8af8d;
+}
+
+.time-section,
+.money-section {
+    height: 50%;
+    width: 100%;
+}
+
+.time-section {
+    border-bottom: 3px solid gray;
+}
+
+
+.recipe-card-wrap .title,
+.recipe-info-title {
+    font-size: 1.5rem;
+    color: #2C2C34;
+}
+
+.recipe-card-wrap .middle {
+    font-size: 4rem;
+    color: white;
+}
+
+.recipe-card-wrap p {
+    color: white;
+}
+
+/* 食譜製作資訊卡 */
+.recipe-info-wrap {
+    border: 2px solid #2C2C34;
+}
+
+
+/* 設定整個dots列的位置，把它移到最下面 */
+.slider-dots {
+    bottom: 0;
+}
+
+/* 設定dots每一個點點的狀態 */
+.slider-dots li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: 1px solid #2C2C34;
+    /* 這邊設定可以讓點點慢慢變白色 */
+    transition: 0.6s;
+}
+
+/* 查看全部食譜連結 */
+.check-all-recipe {
+    color: #2C2C34;
+}
+
+.check-all-recipe:hover {
+    color: #F3BF0C;
+
+}
+
+
+/* ~~~~~~~~~Section6 QA time ~~~~~*/
+.section6 {
+    background: url(../picture/back-img/1.png) center left no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* 暫定，等匡匡文字出來再解 */
+.section6-QA {
+    height: 1150px;
+}
+
+/* 頁籤開始 */
+.QA-section {
+    top: 12%;
+}
+
+.tabs {
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+/*上方頁籤標題*/
+.tab_item {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #F3BF0C;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    text-align: center;
+    color: #565656;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.tab1 {
+    border-radius: 20px 0 0 0;
+}
+
+.tab2 {
+
+    border-radius: 0 20px 0 0;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*下方內容列表*/
+.tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.all_content a {
+    color: #2C2C34
+}
+
+.QA-answer {
+    display: none;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked~#all_content,
+#programming:checked~#programming_content,
+#design:checked~#design_content {
+    display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked+.tab_item {
+    background-color: #F3BF0C;
+    color: #fff;
+}
+
+.QA:hover {
+    cursor: pointer;
+    color: #F3BF0C;
+
+}
+
+.QA-answer {
+    color: #F3BF0C;
+}
+
+/* ～～～～～～Section7 Map 開始～～～～ */
+.section7 {
+    background-color: white;
+}
+
+.map-wrap {
+    max-width: 1400px;
+}
+
+.btn-tab {
+    height: 100px;
+    border: none;
+    background-color: #2C2C34;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.btn-tab:hover {
+    color: #F3BF0C;
+    cursor: pointer;
+}
+
+
+.tabcontent {
+    background-color: #fff;
+    border: 2px solid #2C2C34;
+}
+
+.map-info {
+    border-right: 2px solid #2C2C34;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* *********Footer****** */
+.footer-wrap {
+    background: url(../picture/back-img/bg-black.jpg);
+    background-attachment: fixed;
+    height: 850px;
+
+}
+
+.info {
+    color: #FFAC27;
+}
+
+.follow-us-info i {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.footer-info-wrap hr {
+    border-color: white;
+
+}
+
+/* 右下角fixed button */
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 25%;
+    right: 3%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* 所有裝飾物樣式 */
+.dr {
+    width: 200px;
+    height: 200px;
+}
+
+.dr img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dr1 {
+    transform: scale(1.5) rotate(40deg);
+    top: 7%;
+    left: 65%;
+    z-index: 2;
+
+}
+
+.dr2 {
+    transform: scale(.7);
+    top: 74%;
+    right: 71%;
+}
+
+.dr3 {
+    transform: scale(.7) rotate(-8deg);
+    bottom: -14%;
+    left: 10%;
+}
+
+.dr4 {
+    transform: scale(2) rotate(-20deg);
+    bottom: 10%;
+    left: 6%;
+}
+
+
+.dr5 {
+    transform: scale(2) rotate(-8deg);
+    top: -2%;
+    right: 0;
+}
+
+/* 所有按鈕樣式 */
+/* 白色按鈕，黑底用 */
+.button-white-wrap {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #81848B;
+    position: relative;
+    margin: 0 auto;
+}
+
+.button-white-wrap button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.button-white-wrap button:hover {
+    border: 2px solid #F3BF0C;
+    color: #F3BF0C;
+    transition: .5s;
+}
+
+
+
+/* 黑色按鈕，白底用 */
+.button-black-wrap {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #81848B;
+    position: relative;
+    margin: 0 auto;
+}
+
+.button-black-wrap button {
+    background-color: transparent;
+    border: 2px solid #2C2C34;
+    font-size: 18px;
+    color: #2C2C34;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.button-black-wrap button:hover {
+    border: 2px solid #F3BF0C;
+    color: #F3BF0C;
+    transition: .5s;
+}
+
+/* SM device (576 以下) */
+@media(max-width:576px) {
+    .recipe-wrap {
+        height: 1400px;
+    }
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .recipe-wrap {
+        height: 1500px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* MD-768以下會出現的畫面 */
+@media (max-width: 768px) {
+    .section1 {
+        width: 100%;
+        height: 400px;
+        background: url(../picture/back-img/40.400-crasson-kv.png) center bottom no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+
+    .bitTitle {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .intro {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    .recipe-wrap {
+        height: 1380px;
+    }
+
+    /* 裝飾小物消失或改位置 */
+    .dr3 {
+        display: none;
+    }
+
+
+
+}
+
+
+/* 分隔斷點 */
+/* 769到1200會出現的畫面 */
+/* 注意，會連帶影響1200 以上的東西*/
+@media (min-width: 769px) {
+    .section1 {
+        height: 700px;
+        background: url(../picture/back-img/41.768-crasson-kv.png) center bottom no-repeat;
+        background-size: cover;
+    }
+
+    .bitTitle {
+        font-size: 35px;
+        margin-top: 100px;
+    }
+
+    .intro {
+        font-size: 20px;
+        line-height: 2;
+
+    }
+
+    /* section 4 Bread */
+    .card-wrap {
+        padding-right: 20px;
+    }
+
+    .bread-box {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+
+    .card-info.bread {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .bread-icon-wrap i {
+        font-size: 30px;
+
+    }
+
+    /* add hover scaleX */
+    .card-img-wrap.addhover {
+        transform: scale(1.3, 1.3);
+        transition: 1s;
+    }
+
+    /* section5 recipe card*/
+
+
+
+
+}
+
+/* LG 992 以下會出現的畫面 */
+@media (max-width:992px) {
+    .card-img-wrap {
+        height: 100%;
+    }
+
+    .ingredient-wrap {
+        display: flex;
+    }
+
+    /* 食譜輪播卡設定 */
+    .recipe-card-img-wrap {
+        height: 50%;
+    }
+
+    .recipe-card-wrap {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #2C2C34;
+    }
+
+    .time-section {
+        border-right: 2px solid #81848B;
+        border-bottom: none;
+    }
+
+
+
+
+
+
+}
+
+/* LG 992 以上會出現的畫面 */
+@media(min-width:992px) {
+
+    /* ingredient */
+    .card-wrap.ingredient-wrap {
+        padding: 0 60px;
+    }
+
+    /* recipre */
+    .recipe-img-wrap li {
+        display: flex;
+    }
+
+
+
+    .recipe-card-wrap {
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .recipe-info-wrap {
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+
+    .recipe-wrap {
+        height: 850px;
+    }
+
+    /* QA區 */
+
+
+    .QA-section {
+        left: 35%;
+    }
+
+
+
+}
+
+
+
+/* XL 1200以下的畫面會出現 */
+@media (max-width: 1200px) {
+
+
+    .nav-bar-wrap {
+        display: none !important;
+    }
+
+    .nav-bar-wrap a {
+        font-size: 18px;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 20px;
+    }
+
+    /* 裝飾物消失 */
+    .dr4 {
+        display: none;
+    }
+
+    .dr5 {
+        display: none;
+    }
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+/* XL-1200以上會出現的畫面 */
+@media (min-width: 1200px) {
+    .section1 {
+        height: 1000px;
+        background: url(../picture/back-img/43.1920-crasson-kv.png) center bottom no-repeat;
+        /* background-attachment: fixed; */
+
+        background-size: cover;
+    }
+
+
+    .navbar-mob-wrap {
+        display: none;
+    }
+
+
+    /* web版 */
+    .nav-bar-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .nav-bar-wrap a {
+        font-size: 22px;
+    }
+
+    .nav-left .fa-user {
+        margin-right: 20px;
+    }
+
+    .bitTitle {
+        font-size: 60px;
+        margin-top: 120px;
+    }
+
+    .intro {
+        font-size: 30px;
+        line-height: 2;
+    }
+
+    /* section字體 */
+    .section-info {
+        font-size: 30px;
+
+    }
+
+
+
+}

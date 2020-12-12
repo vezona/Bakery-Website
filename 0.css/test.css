@@ -1,0 +1,26 @@
+* {
+    outline: 1px solid red;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: #333;
+}
+
+
+/* 正事 */
+.map-wrap {
+    max-width: 1400px;
+}
+
+.btn-tab {
+    height: 100px;
+    border: none;
+    background-color: #fff;
+}
+
+
+.tabcontent {
+    background-color: #fff;
+}

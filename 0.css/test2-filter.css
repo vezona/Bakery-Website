@@ -1,0 +1,19 @@
+* {
+    outline: 1px solid red;
+}
+
+body {
+    height: 200vh;
+}
+
+.food-wrap {
+    max-width: 1400px;
+}
+
+.tags {
+    font-size: 30px;
+}
+
+.checkbox-dropdown-list {
+    display: none;
+}
